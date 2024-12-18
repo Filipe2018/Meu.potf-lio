@@ -1,0 +1,261 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #0b80f4;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+nav {
+    background-color: #054798;
+    padding: 0.5rem 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #eef0f3;
+    border-radius: 5px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+section {
+    margin-bottom: 1.5rem;
+    background: #fff;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 1rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+.fa {
+    margin: 0 0.5rem;
+}
+
+.fa:hover {
+    color: #ddd;
+}
+
+/* Estilo para o botão de orçamento */
+.cta-button {
+    background-color: #28a745; /* Verde */
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #218838; /* Verde mais escuro ao passar o mouse */
+}
+
+/* Estilo para o carrossel de promoções */
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    overflow: hidden;
+    margin: auto;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.carousel-item {
+    display: none;
+    text-align: center;
+    padding: 1rem;
+}
+
+.carousel img {
+    max-width: 50%;  /* Ajuste a porcentagem conforme necessário */
+    height: auto;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.prev, .next {
+    cursor: pointer;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+/* Estilo para a seleção de materiais no formulário */
+#materials-selection {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+#materials-selection label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 120px;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s;
+}
+
+#materials-selection label:hover {
+    background-color: #f1f1f1;
+}
+
+#materials-selection img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+.cta-button-reset {
+    background-color: #ff0000; /* Vermelho */
+    margin-left: 1rem;
+}
+
+.cta-button-reset:hover {
+    background-color: #cc0000; /* Vermelho mais escuro ao passar o mouse */
+}
+
+.cta-button-back {
+    background-color: #ffbf00; /* Amarelo */
+    margin-left: 1rem;
+}
+
+.cta-button-back:hover {
+    background-color: #ff9f00; /* Amarelo mais escuro ao passar o mouse */
+}
+#contact {
+   margin-bottom: 1.5rem;
+   background: #fff;
+   padding: 1rem;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   border-radius: 5px;
+}
+#contact h4 {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: left;
+    font-size: 25px;
+}
+.contact-info p {
+    margin: 10px 0;
+    font-size: 16px;
+    text-align: left;
+}
+.quote-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+.carrinho {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #34954a;
+    color: rgb(255, 253, 253);
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+button:hover {
+    background-color: #0ec636;
+}
+
+.produto {
+    background-color: #fff;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.carrinho-conteudo {
+    background-color: #fff;
+    padding: 20px;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 200px;
+}
+
+#itensCarrinho li {
+    list-style-type: none;
+}
+
+#totalCarrinho {
+    font-weight: bold;
+    margin-top: 10px;
+}

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagem/titulo.jpeg" type="image/jpeg">
+    <meta name="description" content="Oliveira Construções - Soluções em Engenharia e Construção Civil">
+    <title>Oliveira Construções</title>
+    <link rel="stylesheet" href="aprimorando css.css">
+    <!-- Ícones para WhatsApp e Instagram -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">
+            <h1>Oliveira Construções</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#about">Sobre Nós</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#promotions">Promoções</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="carrinho">
+            <button id="mostrarCarrinho">Carrinho (0)</button>
+            <div id="carrinho" class="carrinho-conteudo" style="display: none;">
+                <ul id="itensCarrinho"></ul>
+                <p id="totalCarrinho">Total: R$ 0,00</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Seção Principal -->
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h2>Transformamos Projetos em Realidade</h2>
+            <p>Construção civil com qualidade e pontualidade</p>
+            <a href="#quote" class="cta-button" onclick="showQuoteForm()">Solicite seu Orçamento</a>
+
+        </div>
+    </section>
+
+    <!-- Formulário de Orçamento -->
+   <div class="quote-form">
+        <h2>Solicite seu Orçamento</h2>
+        <form id="quote-form">
+            <label for="name">Nome Completo:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" name="cpf" required>
+            
+            <label for="materials">Materiais de Preferência:</label>
+            <div id="materials-selection">
+                <label>
+                    <input type="checkbox" name="materials" value="martelo">
+                    <img src="imagem/martelo.jpg" alt="martelo">
+                    martelo
+                </label>
+                <label>
+                    <input type="checkbox" name="materials" value="chuveiro">
+                    <img src="imagem/chuveiro.jpg" alt="chuveiro">
+                    Chuveiro
+                </label>
+                <label>
+                    <input type="checkbox" name="materials" value="martelo">
+                    <img src="imagem/carrinho.webp" alt="Carrinho">
+                    Carrinho
+                </label>
+                <label>
+                    <input type="checkbox" name="materials" value="martelo">
+                    <img src="imagem/cimento.jpg" alt="cimento">
+                    Cimento
+                </label>
+                <label>
+                    <input type="checkbox" name="materials" value="martelo">
+                    <img src="imagem/luva de pedreiro.jpg" alt="luva de pedreiro">
+                    Luva de pedreiro
+                </label>
+                <label>
+                    <input type="checkbox" name="materials" value="martelo">
+                    <img src="imagem/tijolos.png" alt="tijolos">
+                    Tijolos
+                </label>
+                <label>
+                    <input type="checkbox" name="materials" value="torneira">
+                    <img src="imagem/torneira.jpg" alt="torneira">
+                    Torneira
+                </label>
+            </div>
+            <label for="sendOption">Enviar por:</label>
+            <select id="sendOption" name="sendOption" required>
+                <option value="E-mail"> E-mail </option>
+                <option value="WhatsApp"> WhatsApp </option>
+                <option value="both"> Ambos </option>
+            </select>
+
+            
+            <button type="submit" class="cta-button">Enviar Orçamento</button>
+            <button type="reset" class="octa-button octa-button-reset">Limpar tudo</button>
+            <button type="button" class="octa-button octa-button-back" onclick="hideQuoteForm()"> Voltar </button> 
+        </form>
+    </div>
+
+    <!-- Sobre Nós -->
+    <section id="about">
+        <h2>Sobre Nós</h2>
+        <p>Fundada em 2000, a Oliveira Construções é uma empresa especializada em soluções para construção civil. Com mais de 20 anos de experiência, somos reconhecidos pela qualidade e pela entrega pontual de projetos.</p>
+    </section>
+    <section id="contact">
+        <h4>Contato</h4>
+        <div class="contact-info">
+            <p><strong>Nome:</strong>Igor Filipe</p>
+            <P><strong>E-mail:</strong>igorfilipe1433@gmail.com</P>
+            <p><strong>Telefone</strong>(61) 99134-2386</p>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="services">
+        <h2>Serviços</h2>
+        <div class="service">
+            <h3>Construção de Obras Residenciais</h3>
+            <p>Realizamos construções de casas e apartamentos com foco em qualidade e sustentabilidade.</p>
+        </div>
+        <div class="service">
+            <h3>Construção Comercial</h3>
+            <p>Desenvolvemos projetos para lojas, escritórios e galpões comerciais.</p>
+        </div>
+        <div class="service">
+            <h3>Reformas e Manutenções</h3>
+            <p>Reformamos e realizamos manutenções em imóveis comerciais e residenciais.</p>
+        </div>
+    </section>
+
+    
+    <!-- Catálogo de Promoções -->
+    <section id="promotions">
+        <h2>Promoções e Descontos</h2>
+        <div class="carousel">
+            <div class="carousel-item">
+                <h3>Construção de Casas - Desconto de 15%</h3>
+                <img src="imagem/martelo.jpg" alt="martelo">
+                <p>Aproveite descontos para construção de imóveis residenciais!</p>
+                <p class="valor">27,50</p>
+                <button onclick="adicionarAoCarrinho('martelo', 27,50)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="carousel-item">
+                <h3>Reformas Comerciais - Desconto de 10%</h3>
+                <img src="imagem/chuveiro.jpg" alt="chuveiro">
+                <p>Reformamos seu imóvel comercial com qualidade e economia.</p>
+                <p class="valor">61,98</p>
+                <button onclick="adicionarAoCarrinho('chuveiro', 61,98)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="carousel-item">
+                <h3>Reformas Comerciais - Desconto de 10%</h3>
+                <img src="imagem/carrinho.webp" alt="carrinho">
+                <p>Reformamos seu imóvel comercial com qualidade e economia.</p>
+                <p class="valor">159,90</p>
+                <button onclick="adicionarAoCarrinho('carrinho', 159,90)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="carousel-item">
+                <h3>Reformas Comerciais - Desconto de 10%</h3>
+                <img src="imagem/cimento.jpg" alt="cimento">
+                <p>Reformamos seu imóvel comercial com qualidade e economia.</p>
+                <p class="valor">46,80</p>
+                <button onclick="adicionarAoCarrinho('cimento', 46,80)">Adicionar ao Carrinho</button>            </div>
+            <div class="carousel-item">
+                <h3>Reformas Comerciais - Desconto de 10%</h3>
+                <img src="imagem/luva de pedreiro.jpg" alt="luva de pedreiro">
+                <p>Reformamos seu imóvel comercial com qualidade e economia.</p>
+                <p class="valor">33,79</p>
+                <button onclick="adicionarAoCarrinho('luva de pedreiro', 33,79 )">Adicionar ao Carrinho</button>            </div>
+            <div class="carousel-item">
+                <h3>Reformas Comerciais - Desconto de 10%</h3>
+                <img src="imagem/tijolos.png" alt="tijolos">
+                <p>Reformamos seu imóvel comercial com qualidade e economia.</p>
+                <p class="valor">46,80</p>
+                <button onclick="adicionarAoCarrinho('Tijolos', 46,80)">Adicionar ao Carrinho</button>            </div>
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">Anterior</button>
+        <button class="next" onclick="moveSlide(1)">Proxima</button>
+    </section>
+
+   <!-- Script para o carrossel e formulário -->
+<script>
+    // Controle do carrossel de imagens
+    let slideIndex = 0;
+    showSlides(slideIndex);
+
+    function showSlides(index) {
+        const slides = document.querySelectorAll('.carousel-item');
+        if (index >= slides.length) slideIndex = 0;
+        if (index < 0) slideIndex = slides.length - 1;
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = 'none';
+        }
+        slides[slideIndex].style.display = 'block';
+    }
+
+    function moveSlide(n) {
+        showSlides(slideIndex += n);
+    }
+
+    // Função para mostrar o formulário de orçamento
+    function showQuoteForm() {
+        document.getElementById('quote-form').style.display = 'block'; // Mostra o formulário
+    }
+
+    // Função para esconder o formulário de orçamento
+    function hideQuoteForm() {
+        document.getElementById('quote-form').style.display = 'none'; // Esconde o formulário
+    }
+
+    // Evento para mostrar o formulário quando o botão "Solicite seu Orçamento" for clicado
+    document.querySelector('.cta-button').addEventListener('click', function(event) {
+        event.preventDefault(); // Previne o comportamento padrão do link
+        showQuoteForm();
+    });
+
+    // Evento para esconder o formulário quando o botão "Voltar" for clicado
+    document.querySelector('.cta-button-back').addEventListener('click', function() {
+        hideQuoteForm();
+    });
+
+    // Evento para resetar o formulário quando o botão "Limpar Tudo" for clicado
+    document.querySelector('.cta-button-reset').addEventListener('click', function() {
+        document.getElementById('quote-form').reset(); // Limpa o formulário
+    });
+
+    // Adicionar ao Carrinho
+    let carrinho = [];
+let total = 0;
+
+function adicionarAoCarrinho(nomeProduto, precoProduto) {
+    carrinho.push({ nome: nomeProduto, preco: precoProduto });
+    total += precoProduto;
+    atualizarCarrinho();
+}
+
+function atualizarCarrinho() {
+    const carrinhoList = document.getElementById('itensCarrinho');
+    const totalCarrinho = document.getElementById('totalCarrinho');
+    const mostrarCarrinho = document.getElementById('mostrarCarrinho');
+
+    // Limpar lista de itens no carrinho
+    carrinhoList.innerHTML = '';
+    
+    // Adicionar itens ao carrinho
+    carrinho.forEach(item => {
+        const li = document.createElement('li');
+        li.textContent = `${item.nome} - R$ ${item.preco.toFixed(2)}`;
+        carrinhoList.appendChild(li);
+    });
+    
+    // Atualizar total
+    totalCarrinho.textContent = `Total: R$ ${total.toFixed(2)}`;
+    
+    // Atualizar o botão do carrinho
+    mostrarCarrinho.textContent = `Carrinho (${carrinho.length})`;
+}
+
+ddocument.getElementById('mostrarCarrinho').addEventListener('click', () => {
+    const carrinhoConteudo = document.getElementById('carrinho');
+    carrinhoConteudo.style.display = carrinhoConteudo.style.display === 'none' ? 'block' : 'none';
+});
+
+</script>
+
+</body>
+</html>
